@@ -1,44 +1,44 @@
 <ul class="list-inline text-center footer-links">
 
-{%- if site.social-network-links.rss and site.rss-description -%}
-  <li class="list-inline-item">
-    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">RSS</span>
-    </a>
-  </li>
-{%- endif -%}
-
 {%- if site.social-network-links.email -%}
   <li class="list-inline-item">
-    <a href="mailto:{{ site.social-network-links.email }}" title="Email me">
+    <a href="mailto:fenglikemath@gmail.com" title="Email">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
       </span>
-      <span class="sr-only">Email me</span>
+      <span class="sr-only">Email</span>
    </a>
   </li>
 {%- endif -%}
 
-{%- if site.social-network-links.calendly -%}
+{%- if site.social-network-links.github -%}
   <li class="list-inline-item">
-    <a href="https://calendly.com/{{ site.social-network-links.calendly }}" title="Schedule a meeting with me">
+    <a href="https://github.com/rafaelfeng1712" title="Github">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-calendar-check fa-stack-1x fa-inverse"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
       </span>
-      <span class="sr-only">Schedule a meeting with me</span>
+      <span class="sr-only">Email</span>
    </a>
   </li>
-{%- endif -%}
+{%- endif -%}  
 
 {%- if site.social-network-links.facebook -%}
   <li class="list-inline-item">
-    <a href="https://www.facebook.com/{{ site.social-network-links.facebook }}" title="Facebook">
+    <a href="https://www.instagram.com/rafaelfeng1712" title="Instagram">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Instagram</span>
+   </a>
+  </li>
+{%- endif -%}
+  
+{%- if site.social-network-links.facebook -%}
+  <li class="list-inline-item">
+    <a href="https://www.facebook.com/rafaelfeng1712" title="Facebook">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
