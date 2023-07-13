@@ -1,78 +1,38 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: Soal Mingguan 1 - 13/07/2023
+tags: [soalmingguan, aljabar, sedang]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+### Soal
+Diketahui $a, b, c, d$ real sehingga,
 
-**Here is some bold text**
+$a^n+b^n+c^n=d^n\ \forall\ n=1, 2,\text{dan}\ 3.$
 
-## Here is a secondary heading
+Tentukan semua $(a, b, c, d)$ yang memenuhi.
+### Solusi
+Perhatikan bahwa,
+$a+b+c=d,$
 
-Here's a useless table:
+$a^2+b^2+c^2=d^2,$
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+$a^3+b^3+c^3=d^3.$
+Akibatnya
 
+$ab+bc+ca=\dfrac{(a+b+c)^2-(a^2+b^2+c^2)}{2}=0$
 
-How about a yummy crepe?
+dan
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+$a^3+b^3+c^3+3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)\implies	abc=\dfrac{d(d^2-0)-d^3}{3}=0.$
 
-It can also be centered!
+Bila $a, b, c$ merupakan bilangan real yang memenuhi persamaan $px^3+qx^2+rx+s=0$, maka
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
+$-\dfrac{q}{p}=d,	\dfrac{r}{p}=0, -\dfrac{s}{p}=0.$
 
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
+Akibatnya dapat dipastikan $s=r=0$ dan $q=-pd$. Maka $a, b, c$ merupakan bilangan real yang memenuhi persamaan $px^3-pdx^2=0$, kemudian karena $p\ne0$ akibatnya $x^3-dx^2=0\implies x^2(x-d)=0$ sehingga $x=0$ atau $x=d$. Maka $(a, b, c)=(d, 0, 0), (0, d, 0),$ dan $(0, 0, d)$ untuk setiap $d$ real.
+		
+Jadi $(a, b, c, d)=(d, 0, 0, d), (0, d, 0, d),$ dan $(0, 0, d, d)$.
 
 {: .box-error}
 **Error:** This is an error box.
