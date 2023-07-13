@@ -2,6 +2,7 @@
 title : Soal Mingguan
 layout: post
 tags: [soal mingguan]
+comments: true
 ---
 
 ### Soal
